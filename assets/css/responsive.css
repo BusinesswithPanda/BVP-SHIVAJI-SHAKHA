@@ -806,3 +806,233 @@ video, iframe { max-width: 100%; height: auto; }
     }
 }
 
+
+/* ============================
+   21. BVP SERVICE CARDS (index.html slick slider)
+   ============================ */
+
+.bvp-card-img {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    background: #f5f5f5;
+}
+
+.bvp-card-img img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .bvp-card-img { height: 180px; }
+    .bvp-card-title { font-size: 1.05rem !important; }
+    .bvp-card-desc { font-size: 0.88rem !important; }
+}
+
+@media (max-width: 576px) {
+    .bvp-card-img { height: 160px; }
+    .bvp-card-title { font-size: 1rem !important; }
+    .bvp-card-footer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+    .bvp-btn {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .bvp-service-slider .slick-prev { left: -5px !important; }
+    .bvp-service-slider .slick-next { right: -5px !important; }
+}
+
+
+/* ============================
+   22. COMMUNITY INTRO SECTION (Gatividhi pages)
+   ============================ */
+
+.community-intro-section { overflow: hidden; }
+
+@media (max-width: 991px) {
+    .community-intro-section { padding: 60px 0 40px !important; }
+    .intro-text { padding-right: 0 !important; }
+    .intro-text h2 { font-size: 1.6rem !important; }
+}
+
+@media (max-width: 767px) {
+    .community-intro-section { padding: 40px 0 30px !important; }
+    .intro-text { padding-right: 0 !important; margin-bottom: 24px !important; }
+    .intro-text span { font-size: 13px !important; letter-spacing: 1px !important; }
+    .intro-text h2 { font-size: 1.4rem !important; }
+    .intro-text p { font-size: 1rem !important; }
+    .intro-video-wrap { border-radius: 12px !important; }
+}
+
+@media (max-width: 480px) {
+    .community-intro-section { padding: 30px 0 20px !important; }
+    .intro-text h2 { font-size: 1.25rem !important; }
+    .intro-text p { font-size: 0.95rem !important; }
+}
+
+
+/* ============================
+   23. GALLERY SLIDER SECTION (Gatividhi pages)
+   ============================ */
+
+.infinite-gallery-section { overflow: hidden; }
+
+@media (max-width: 767px) {
+    .infinite-gallery-section { padding: 30px 0 50px !important; }
+    .infinite-gallery-section .section-title span { font-size: 12px !important; }
+    .infinite-gallery-section h2 { font-size: 1.5rem !important; }
+    .custom-slider-wrapper { padding: 0 5px !important; }
+    .img-box { height: 180px !important; }
+    .activity-gallery-slider .owl-nav { left: -8px !important; right: -8px !important; }
+    .activity-gallery-slider .owl-nav button.owl-prev,
+    .activity-gallery-slider .owl-nav button.owl-next {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-box { height: 150px !important; }
+}
+
+
+/* ============================
+   24. PAGE BANNER (Gatividhi pages)
+   ============================ */
+
+@media (max-width: 767px) {
+    #page-banner { min-height: 280px !important; }
+    #page-banner .breadcumb-wrap { padding: 20px 15px !important; }
+    #page-banner .breadcumb-wrap h2 { font-size: 1.6rem !important; margin-bottom: 10px !important; }
+    #page-banner .breadcumb-wrap h3 { font-size: 0.9rem !important; letter-spacing: 1.5px !important; }
+}
+
+@media (max-width: 480px) {
+    #page-banner { min-height: 220px !important; }
+    #page-banner .breadcumb-wrap h2 { font-size: 1.3rem !important; }
+    #page-banner .breadcumb-wrap h3 { font-size: 0.78rem !important; letter-spacing: 1px !important; }
+}
+
+
+/* ============================
+   25. GLOBAL OVERFLOW SAFETY
+   ============================ */
+
+@media (max-width: 575px) {
+    .container, .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+
+
+/* ============================
+   26. YOUTUBE IFRAME ASPECT RATIO FIX
+   ============================ */
+
+.intro-video-wrap {
+    position: relative !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    overflow: hidden !important;
+}
+
+.intro-video-wrap iframe {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
+
+/* ============================
+   27. MEMBER CARDS
+   ============================ */
+
+.member-img-wrapper { overflow: hidden; }
+
+.member-img-wrapper img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+@media (max-width: 576px) {
+    .member-card-premium {
+        max-width: 260px;
+        margin: 0 auto 20px !important;
+    }
+}
+
+
+/* ============================
+   28. THEME BUTTON — FULL-WIDTH ON SMALL SCREENS
+   ============================ */
+
+@media (max-width: 480px) {
+    .theme-btn {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 12px 20px !important;
+        font-size: 0.9rem !important;
+        box-sizing: border-box !important;
+    }
+    .header-right .theme-btn,
+    .close-form .theme-btn {
+        display: inline-flex !important;
+        width: auto !important;
+        padding: 7px 12px !important;
+    }
+}
+
+
+/* ============================
+   29. FOOTER FULL RESPONSIVE
+   ============================ */
+
+@media (max-width: 767px) {
+    .wpo-upper-footer { padding: 40px 0 20px !important; }
+    .wpo-upper-footer .col { margin-bottom: 24px !important; }
+    .footer-bvp-logo { max-width: 160px !important; }
+    .wpo-lower-footer .row {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 8px !important;
+        padding: 10px 0 !important;
+    }
+    .wpo-lower-footer .links {
+        justify-content: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .wpo-lower-footer .copyright {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+
+/* ============================
+   30. INDEX.HTML — SECTIONS
+   ============================ */
+
+@media (max-width: 767px) {
+    .bvp-section-title h2 { font-size: 1.6rem !important; }
+    .bvp-section-title p { font-size: 0.95rem !important; }
+    .row.gy-5 { --bs-gutter-y: 1.5rem !important; }
+}
+
+@media (max-width: 480px) {
+    .bvp-section-title h2 { font-size: 1.35rem !important; }
+}
+
